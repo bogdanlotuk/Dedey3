@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dedey</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <form class="form" method="POST">
+                    <fieldset class="form__fieldset form__fieldset-city">
+                        <p class="form__fieldset-wrap form__wrap-city">
+                            <label class="form__label-city" for="city">Место или название отеля</label>
+                            <input class="form__input-city" type="text" id="city" placeholder="Введите здесь место">
+                        </p>
+                    </fieldset>
+                    <fieldset class="form__fieldset form__fieldset-date">
+                        <p class="form__fieldset-wrap form__fieldset-from">
+                            <label class="form__label-from" for="from">заезд</label>
+                            <input class="form__input-from" type="text" id="from" name="from">
+                        </p>
+                        <p class="form__fieldset-wrap">
+                            <label class="form__label-end" for="to">выезд</label>
+                            <input class="form__input-end" type="text" id="to" name="to">
+                        </p>
+                    </fieldset>
+                    <fieldset class="form__fieldset form__fieldset-number">
+                        <div class="form__fieldset-wrap form__wrap-number">
+                            <label class="form__label-number" for="number">номера</label>
+                            <input class="form__input-number stepper__input" id="theNumber" type="number" min="0" max="100" step="1" value="1" autofocus>
+                            <div class="form__controls">
+                                <button class="form__button-up" type="button" id="theButtonUp1"><img src="img/Arrow_up.png" alt=""></button>
+                                <button class="form__button-down" type="button" id="theButtonDown1"><img src="img/Arrow_down.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="form__fieldset-wrap form__wrap-adult">
+                            <label class="form__label-adult" for="adult">взрослые</label>
+                            <input class="form__input-adult stepper__input" id="theAdult" type="number" min="0" max="100" step="1" value="1" autofocus>
+                            <div class="form__controls">
+                                <button class="form__button-up" type="button" id="theButtonUp2"><img src="img/Arrow_up.png" alt=""></button>
+                                <button class="form__button-down" type="button" id="theButtonDown2"><img src="img/Arrow_down.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="form__fieldset-wrap form__wrap-children">
+                            <label class="form__label-children" for="children">дети</label>
+                            <input class="form__input-children stepper__input" id="theChildren" type="number" min="0" max="100" step="1" value="0" autofocus>
+                            <div class="form__controls">
+                                <button class="form__button-up" type="button" id="theButtonUp3"><img src="img/Arrow_up.png" alt=""></button>
+                                <button class="form__button-down" type="button" id="theButtonDown3"><img src="img/Arrow_down.png" alt=""></button>
+                            </div>
+                        </div>
+                        <a class="form__plus-link" href="#"><img class="form__plus-img" src="img/Plus.png" alt=""></a>
+                    </fieldset>
+                    <button class="form__btn" type="submit">найти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/stepper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
